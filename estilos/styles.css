@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+root {
+    --primary-color: #ff0000;
+    --secondary-color: #333;
+    --background-color: #f2f2f2;
+    --text-color: #333;
+    --font:"VT323", monospace;
+}
+header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Sección del logo y título */
+.logoytitulo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#logo {
+    height: 50px;
+    width: auto;
+}
+#title{
+    font-family: "VT323", monospace;
+    font-size: 3em;
+}
+
+/* Para los enlaces de navegación */
+nav {
+    display: flex;
+    align-items: center;
+    height: auto;
+}
+
+nav#menu a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav#menu li:hover{
+    transition:  0.3 ease;
+    transform: scale(1.1);
+    text-decoration-thickness: 2px;
+}
+
+nav#menu ul {
+    list-style-type: none;
+    align-content: center;
+    display: flex;
+    gap: 40px;
+    font-family:"VT323", monospace;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+/* Para los enlaces de redes sociales */
+.redes {
+    height: auto;
+    align-content: center;
+    
+}
+
+.redes ul{
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+}
+
+svg {
+    width: 30px;
+    height: 30px;
+    transition: fill 0.3s ease;
+}
+a#YT :hover {
+    fill: #ff0000;
+}
+
+
+/*Acabó el nav-bar, empieza el hero*/
+.hero-div{
+    padding: 41vh;
+    background-size:cover;
+    background-image: url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.algo{
+    color: #dedddd;
+}
+h1{
+    color: #f2f2f2;
+}
+
+/*Aquí empieza el main*/
+.instrumentosdiv{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.instrumentosdiv img {
+    max-height: 40vh;
+    aspect-ratio: 2/3;
+}
+.instrumentosdiv article {
+    border-radius: 20px;
+    border: black 2px solid;
+    padding: 5px;
+}
+/*Footer*/
+footer{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contacto {
+    padding: 200px 0 0 0 ;
+}
